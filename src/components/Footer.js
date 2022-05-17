@@ -2,10 +2,19 @@ import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
-import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import '../styles/Footer.css'
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+
+const styles = {
+  footerStyle: {
+    background: 'lightgrey',
+    justifyContent: 'flex',
+    width: '99.3%',
+    position: 'absolute',
+    bottom: '0',
+  },
+};
 
 export default function Footer() {
   const [value, setValue] = React.useState('recents');
@@ -15,11 +24,11 @@ export default function Footer() {
   };
 
   return (
-    <BottomNavigation sx={{ width: 500 }} value={value} onChange={handleChange}>
+    <BottomNavigation style={styles.footerStyle} sx={{ width: 500 }} value={value} onChange={handleChange}>
       <BottomNavigationAction
-        label="Back to Top"
-        value="Backtotop"
-        icon={<ArrowUpwardOutlinedIcon />}
+        label="Download My Resume"
+        href="https://docs.google.com/document/d/1eGeJR7NN6qpDoTNQmqOVgY40xMfKHuozxN5ev2LF9iw/edit?usp=sharing"
+        icon={<FileDownloadIcon />}
       />
       <BottomNavigationAction
         label="LinkedIn"
