@@ -1,12 +1,13 @@
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import FolderIcon from '@mui/icons-material/Folder';
-import RestoreIcon from '@mui/icons-material/Restore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import '../styles/Footer.css'
 
-export default function LabelBottomNavigation() {
+export default function Footer() {
   const [value, setValue] = React.useState('recents');
 
   const handleChange = (event, newValue) => {
@@ -16,21 +17,25 @@ export default function LabelBottomNavigation() {
   return (
     <BottomNavigation sx={{ width: 500 }} value={value} onChange={handleChange}>
       <BottomNavigationAction
-        label="Recents"
-        value="recents"
-        icon={<RestoreIcon />}
+        label="Back to Top"
+        value="Backtotop"
+        icon={<ArrowUpwardOutlinedIcon />}
       />
       <BottomNavigationAction
-        label="Favorites"
-        value="favorites"
-        icon={<FavoriteIcon />}
+        label="LinkedIn"
+        href ="https://www.linkedin.com/in/isaak-morales"
+        icon={<LinkedInIcon />}
       />
       <BottomNavigationAction
-        label="Nearby"
-        value="nearby"
-        icon={<LocationOnIcon />}
+        label="Github"
+        href = "https://github.com/CallMeIce"
+        icon={<GitHubIcon />}
       />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
+      <BottomNavigationAction 
+        label="Contact Page" 
+        value="contactpageicon" 
+        icon={<ContactPageIcon />} 
+      />
     </BottomNavigation>
   );
 }
