@@ -3,6 +3,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Projects from './components/Portfolio'
 import Home from './components/Home'
+import Resume from './components/Resume'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Resume" element={<Resume />} />
         </Routes>
       </div>
   );

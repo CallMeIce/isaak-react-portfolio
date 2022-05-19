@@ -8,10 +8,11 @@
   } */
 
 .routesContainer {
-  background-image: url("./images/new-york-city-in-night.jpg");
+  background-image: url("./images/NYC-at-night.jpg");
   width: 100vw;
   height: 100vh;
   position: fixed;
+  background-size: cover;
 }
 
   body {

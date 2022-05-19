@@ -1,10 +1,13 @@
 import React from "react";
 
+
+
+
 export default function Home() {
     return (
-      <div className="App">
+      <div className="home">
           <main>
-            <h1>Welcome! To my Home</h1>
+            <h1>Isaak Morales</h1>
           </main>
   
       </div>

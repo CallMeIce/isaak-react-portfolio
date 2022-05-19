@@ -1,10 +1,12 @@
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import ContactPageIcon from '@mui/icons-material/ContactPage';
+import HomeIcon from '@mui/icons-material/Home';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import { Link } from "react-router-dom";
+
 
 const styles = {
   footerStyle: {
@@ -42,10 +44,10 @@ export default function Footer() {
         icon={<GitHubIcon />}
       />
       <BottomNavigationAction 
-        label="Contact Page" 
-        href="#Contact"
-        value="contactpageicon" 
-        icon={<ContactPageIcon />} 
+        label="Home" 
+        component={Link} to='/Home'
+        value="HomeIcon" 
+        icon={<HomeIcon />} 
       />
     </BottomNavigation>
   );
