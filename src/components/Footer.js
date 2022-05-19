@@ -9,10 +9,11 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 const styles = {
   footerStyle: {
     background: 'lightgrey',
-    justifyContent: 'flex',
-    width: '99.3%',
-    position: 'absolute',
+    justifyContent: 'flex-wrap',
+    width: '100vw',
+    position: 'fixed',
     bottom: '0',
+    margin: '0px'
   },
 };
 
@@ -42,6 +43,7 @@ export default function Footer() {
       />
       <BottomNavigationAction 
         label="Contact Page" 
+        href="#Contact"
         value="contactpageicon" 
         icon={<ContactPageIcon />} 
       />

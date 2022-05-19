@@ -1,0 +1,12 @@
+
+.Background {
+    background-image: url("./images/new-york-city-in-night.jpg");
+      background-size: "cover";
+      background-repeat:no-repeat; 
+      width: 100vw;
+  }
+
+  body {
+    display: block;
+    margin: 0px;
+  }

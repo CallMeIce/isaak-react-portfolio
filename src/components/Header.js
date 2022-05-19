@@ -13,9 +13,9 @@ export default function Header() {
   return (
     <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
       <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="About Me" />
-        <Tab label="Projects" />
-        <Tab label="Contact Me" />
+        <Tab label="About Me" href="#About" value="About"/>
+        <Tab label="Projects" href="#Projects" value="Projects"/>
+        <Tab label="Contact Me" href="#Contact" value="Contact Me"/>
       </Tabs>
     </Box>
   );
