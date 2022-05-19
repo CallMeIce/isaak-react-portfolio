@@ -1,12 +1,20 @@
 
-.Background {
+/* .Background {
     background-image: url("./images/new-york-city-in-night.jpg");
       background-size: "cover";
       background-repeat:no-repeat; 
       width: 100vw;
-  }
+      opacity: 0;
+  } */
+
+.routesContainer {
+  background-image: url("./images/new-york-city-in-night.jpg");
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
 
   body {
     display: block;
     margin: 0px;
-  }
+    }

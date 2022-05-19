@@ -11,7 +11,7 @@ const styles = {
     background: 'lightgrey',
     justifyContent: 'flex-wrap',
     width: '100vw',
-    position: 'fixed',
+    position: 'absolute',
     bottom: '0',
     margin: '0px'
   },
