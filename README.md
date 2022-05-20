@@ -40,4 +40,4 @@ You can send me feedback through my contact me and critique me on my portfolio o
 
 Github Repo - https://github.com/CallMeIce/isaak-react-portfolio
 
-Deployed Link - 
+Deployed Link - https://callmeice.github.io/isaak-react-portfolio/
