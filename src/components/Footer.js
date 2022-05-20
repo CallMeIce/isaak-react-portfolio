@@ -45,7 +45,7 @@ export default function Footer() {
       />
       <BottomNavigationAction 
         label="Home" 
-        component={Link} to='/Home'
+        component={Link} to='/'
         value="HomeIcon" 
         icon={<HomeIcon />} 
       />

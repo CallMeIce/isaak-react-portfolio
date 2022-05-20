@@ -28,7 +28,7 @@ export default function Header() {
         <Tab label="About Me" component={Link} to='/About' value="About"/>
         <Tab label="Projects" component={Link} to='/Projects' value="Projects"/>
         <Tab label="Contact Me" component={Link} to='/Contact' value="Contact Me"/>
-        <Tab label="Resume" component={Link} to='/Resume' value="Contact Me"/>
+        <Tab label="Resume" component={Link} to='/Resume' value="Resume"/>
       </Tabs>
     </Box>
   );
