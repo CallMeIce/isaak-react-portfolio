@@ -45,7 +45,7 @@ export default function Footer() {
       />
       <BottomNavigationAction 
         label="Home" 
-        component={Link} to='/'
+        component={Link} to='/isaak-react-portfolio/'
         value="HomeIcon" 
         icon={<HomeIcon />} 
       />

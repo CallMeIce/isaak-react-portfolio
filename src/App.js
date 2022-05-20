@@ -13,7 +13,7 @@ function App() {
       <div className="routesContainer">
         {/* <img className="Background" src={require('./images/new-york-city-in-night.jpg')} alt='NYC Gif' /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/isaak-react-portfolio/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
