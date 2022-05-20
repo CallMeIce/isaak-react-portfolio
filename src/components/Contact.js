@@ -1,45 +1,45 @@
-import React from "react";
-import { Form, Input, TextArea, Button } from "semantic-ui-react";
-// import ‘./App.css';
+import emailjs from "emailjs-com";
+import React from 'react';
 
+export default function Contact() {
 
-const Contact = () => {
-  
-  {/* --- handleOnSubmit method --- */}
-  return (
-    <div>
-      <Form onSubmit={handleOnSubmit}>
-        <Form.Field
-          id='form-input-control-email'
-          control={Input}
-          label='Email'
-          name='user_email'
-          placeholder='Email…'
-          required
-          icon='mail'
-          iconPosition='left'
-        />
-        <Form.Field
-          id='form-input-control-last-name'
-          control={Input}
-          label='Name'
-          name='user_name'
-          placeholder='Name…'
-          required
-          icon='user circle'
-          iconPosition='left'
-        />
-        <Form.Field
-          id='form-textarea-control-opinion'
-          control={TextArea}
-          label='Message'
-          name='user_message'
-          placeholder='Message…'
-          required
-        />
-        <Button type='submit' color='green'>Submit</Button>
-      </Form>
-    </div>
-  );
+    function sendEmail(e) {
+      e.preventDefault();
+    
+
+      emailjs.sendForm('gmail', 'template_m9ebzlg', e.target, 'tbuScqCg_Kjiy9imi' )
+      .then((result)=>{
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    }
+
+    return(
+      <div>
+          <div className="container">
+          <form onSubmit={sendEmail}>
+                  <div>
+                      <div>
+                          <input type="text" className="form-control" placeholder="Name" name="name"/>
+                      </div>
+                      <div>
+                          <input type="email" className="form-control" placeholder="Email Address" name="email"/>
+                      </div>
+                      <div>
+                          <input type="text" className="form-control" placeholder="Subject" name="subject"/>
+                      </div>
+                      <div>
+                          <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                      </div>
+                      <div>
+                          <input type="submit" className="btn btn-info" value="Send Message"></input>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  )
 }
-export default Contact;
+
+//*still gotta work on emailjs
