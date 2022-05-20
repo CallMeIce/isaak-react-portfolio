@@ -5,6 +5,8 @@ import Projects from './components/Portfolio'
 import Home from './components/Home'
 import Resume from './components/Resume'
 import './App.css'
+import React from "react";
+
 
 function App() {
   return (
