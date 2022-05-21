@@ -35,9 +35,23 @@ export default function Projects() {
 
     const openTwo = Boolean(anchorElTwo);
 
+    //*Third Card Popover
+    const [anchorElThree, setAnchorElThree] = React.useState(null);
+
+    const handlePopoverOpenThree = (event) => {
+        setAnchorElThree(event.currentTarget);
+    };
+
+    const handlePopoverCloseThree = () => {
+        setAnchorElThree(null);
+    };
+
+    const openThree = Boolean(anchorElThree);
+
+
     return (
         <div className='container'>
-
+            
             <Card className='One' sx={{ maxWidth: 345 }}>
                 <CardMedia
                     component="img"
@@ -83,7 +97,7 @@ export default function Projects() {
                             onClose={handlePopoverClose}
                             disableRestoreFocus
                         >
-                            <Typography sx={{ p: 1 }}>HTML,CSS,JQuery, and Moment.js</Typography>
+                            <Typography sx={{ p: 1 }}>JQuery, and Moment.js</Typography>
                         </Popover>
                     </div>
                 </CardActions>
@@ -105,8 +119,8 @@ export default function Projects() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button href='https://github.com/CallMeIce/Weekday-Planner' size="small">Github Repo</Button>
-                    <Button href='https://callmeice.github.io/Weekday-Planner/' size="small">Deployed Link</Button>
+                    <Button href='https://github.com/CallMeIce/Text-Editor' size="small">Github Repo</Button>
+                    <Button href='https://secure-cliffs-39156.herokuapp.com/' size="small">Deployed Link</Button>
                     <div>
                         <Typography
                             aria-owns={open ? 'mouse-over-popover' : undefined}
@@ -134,12 +148,63 @@ export default function Projects() {
                             onClose={handlePopoverCloseTwo}
                             disableRestoreFocus
                         >
-                            <Typography sx={{ p: 1 }}>Javascript, Express</Typography>
+                            <Typography sx={{ p: 1 }}>Express, Uses PWA</Typography>
                         </Popover>
                     </div>
                 </CardActions>
             </Card>
 
+
+            <Card className='One' sx={{ maxWidth: 345 }}>
+                <CardMedia
+                    component="img"
+                    height="140"
+                    image={require('../images/Team-Profile.gif')}
+                    alt="Text Editor"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        Team Profile Generator
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        This is a generator that you can use to create a team through the integrated terminal and render it on the webpage. 
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button href='https://github.com/CallMeIce/Team-Profile-Generator' size="small">Github Repo</Button>
+                    <Button href='https://drive.google.com/file/d/1eoJh--ItsV7rcUx9Jd2ionVdHneW_qOA/view' size="small">Walkthrough Video</Button>
+                    <div>
+                        <Typography
+                            aria-owns={open ? 'mouse-over-popover' : undefined}
+                            aria-haspopup="true"
+                            onMouseEnter={handlePopoverOpenThree}
+                            onMouseLeave={handlePopoverCloseThree}
+                        >
+                            Frameworks Used
+                        </Typography>
+                        <Popover
+                            id="mouse-over-popover"
+                            sx={{
+                                pointerEvents: 'none',
+                            }}
+                            open={openThree}
+                            anchorEl={anchorElThree}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left',
+                            }}
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left',
+                            }}
+                            onClose={handlePopoverCloseThree}
+                            disableRestoreFocus
+                        >
+                            <Typography sx={{ p: 1 }}>Node.js, Inquirer</Typography>
+                        </Popover>
+                    </div>
+                </CardActions>
+            </Card>
             
 
         </div>
