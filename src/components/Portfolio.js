@@ -79,7 +79,7 @@ export default function Projects() {
             <CardMedia
                 component="img"
                 height="140"
-                image="../src/images/Daily-Plan.png"
+                image={require('../images/Daily-Plan.png')}
                 alt="Daily Planner Project"
             />
             <CardContent>
