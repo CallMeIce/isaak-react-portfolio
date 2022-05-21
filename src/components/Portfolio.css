@@ -1,0 +1,11 @@
+.One {
+    margin-left: 10%;
+    margin-top: 3%;
+    border: grey;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.Two {
+    margin-top: 0px;
+}

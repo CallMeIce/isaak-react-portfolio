@@ -18,7 +18,7 @@ export default function Home() {
       <div className="home" style={styles.homeStyle}>
           <main>
             <h1>Isaak Morales</h1>
-              <p>Full Stack Web Developer, Gamer, Dream Chaser</p>
+              <p>Full Stack Web Dev, Gamer, Drummer, Dream Chaser</p>
           </main>
   
       </div>
