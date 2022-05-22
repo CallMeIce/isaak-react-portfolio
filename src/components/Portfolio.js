@@ -48,6 +48,44 @@ export default function Projects() {
 
     const openThree = Boolean(anchorElThree);
 
+    //*Fourth Card Popover
+    const [anchorElFour, setAnchorElFour] = React.useState(null);
+
+    const handlePopoverOpenFour = (event) => {
+        setAnchorElFour(event.currentTarget);
+    };
+
+    const handlePopoverCloseFour = () => {
+        setAnchorElFour(null);
+    };
+
+    const openFour = Boolean(anchorElFour);
+
+    //*Fifth Card Popover
+    const [anchorElFive, setAnchorElFive] = React.useState(null);
+
+    const handlePopoverOpenFive = (event) => {
+        setAnchorElFive(event.currentTarget);
+    };
+
+    const handlePopoverCloseFive = () => {
+        setAnchorElFive(null);
+    };
+
+    const openFive = Boolean(anchorElFive);
+
+    //*Fifth Card Popover
+    const [anchorElSix, setAnchorElSix] = React.useState(null);
+
+    const handlePopoverOpenSix = (event) => {
+        setAnchorElSix(event.currentTarget);
+    };
+
+    const handlePopoverCloseSix = () => {
+        setAnchorElSix(null);
+    };
+
+    const openSix = Boolean(anchorElSix);
 
     return (
         <div className='container'>
@@ -200,12 +238,165 @@ export default function Projects() {
                             onClose={handlePopoverCloseThree}
                             disableRestoreFocus
                         >
-                            <Typography sx={{ p: 1 }}>Node.js, Inquirer</Typography>
+                            <Typography sx={{ p: 1 }}>Node.js, Inquirer, OOP</Typography>
                         </Popover>
                     </div>
                 </CardActions>
             </Card>
             
+
+            <Card className='One' sx={{ maxWidth: 345 }}>
+                <CardMedia
+                    component="img"
+                    height="140"
+                    image={require('../images/WatchMe.png')}
+                    alt="Text Editor"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        WatchMe
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    A simple application to allow users to search for their favorite t.v. show/movie and find out which streaming services they are currently available on.
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button href='https://github.com/CallMeIce/watch_me' size="small">Github Repo</Button>
+                    <Button href='https://mcarson24.github.io/watch_me/' size="small">Deployed Link</Button>
+                    <div>
+                        <Typography
+                            aria-owns={open ? 'mouse-over-popover' : undefined}
+                            aria-haspopup="true"
+                            onMouseEnter={handlePopoverOpenFour}
+                            onMouseLeave={handlePopoverCloseFour}
+                        >
+                            Frameworks Used
+                        </Typography>
+                        <Popover
+                            id="mouse-over-popover"
+                            sx={{
+                                pointerEvents: 'none',
+                            }}
+                            open={openFour}
+                            anchorEl={anchorElFour}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left',
+                            }}
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left',
+                            }}
+                            onClose={handlePopoverCloseFour}
+                            disableRestoreFocus
+                        >
+                            <Typography sx={{ p: 1 }}>HTML, CSS, Javascript, API's</Typography>
+                        </Popover>
+                    </div>
+                </CardActions>
+            </Card>
+
+
+            <Card className='One' sx={{ maxWidth: 345 }}>
+                <CardMedia
+                    component="img"
+                    height="140"
+                    image={require('../images/portfolio-pic.jpeg')}
+                    alt="Text Editor"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        My First Portfolio
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    This was my original portfolio that I kept just so I can see how far I progressed.
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button href='https://github.com/CallMeIce/Portfolio' size="small">Github Repo</Button>
+                    <Button href='https://callmeice.github.io/Portfolio/' size="small">Deployed Link</Button>
+                    <div>
+                        <Typography
+                            aria-owns={open ? 'mouse-over-popover' : undefined}
+                            aria-haspopup="true"
+                            onMouseEnter={handlePopoverOpenFive}
+                            onMouseLeave={handlePopoverCloseFive}
+                        >
+                            Frameworks Used
+                        </Typography>
+                        <Popover
+                            id="mouse-over-popover"
+                            sx={{
+                                pointerEvents: 'none',
+                            }}
+                            open={openFive}
+                            anchorEl={anchorElFive}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left',
+                            }}
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left',
+                            }}
+                            onClose={handlePopoverCloseFive}
+                            disableRestoreFocus
+                        >
+                            <Typography sx={{ p: 1 }}>HTML, CSS</Typography>
+                        </Popover>
+                    </div>
+                </CardActions>
+            </Card>
+
+
+            <Card className='One' sx={{ maxWidth: 345 }}>
+                <CardMedia
+                    component="img"
+                    height="140"
+                    image={require('../images/Social-Network.jpg')}
+                    alt="Text Editor"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        Social Network API
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    A social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list.                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button href='https://github.com/CallMeIce/Social-Network' size="small">Github Repo</Button>
+                    <Button href='https://drive.google.com/file/d/1eoJh--ItsV7rcUx9Jd2ionVdHneW_qOA/view' size="small">Walkthrough Video</Button>                    <div>
+                        <Typography
+                            aria-owns={open ? 'mouse-over-popover' : undefined}
+                            aria-haspopup="true"
+                            onMouseEnter={handlePopoverOpenSix}
+                            onMouseLeave={handlePopoverCloseSix}
+                        >
+                            Frameworks Used
+                        </Typography>
+                        <Popover
+                            id="mouse-over-popover"
+                            sx={{
+                                pointerEvents: 'none',
+                            }}
+                            open={openSix}
+                            anchorEl={anchorElSix}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left',
+                            }}
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left',
+                            }}
+                            onClose={handlePopoverCloseSix}
+                            disableRestoreFocus
+                        >
+                            <Typography sx={{ p: 1 }}>Insomnia, Express, MongoDB, Mongoose, CRUD functionality</Typography>
+                        </Popover>
+                    </div>
+                </CardActions>
+            </Card>
 
         </div>
     );
