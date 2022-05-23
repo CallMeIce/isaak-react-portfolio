@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/isaak-react-portfolio/static/css/main.644fb909.css",
-    "main.js": "/isaak-react-portfolio/static/js/main.d9c35936.js",
+    "main.css": "/isaak-react-portfolio/static/css/main.15b06f90.css",
+    "main.js": "/isaak-react-portfolio/static/js/main.778f0b89.js",
     "static/media/Team-Profile.gif": "/isaak-react-portfolio/static/media/Team-Profile.94fee27a2b31f83f72e2.gif",
     "static/media/NYC-at-night.jpg": "/isaak-react-portfolio/static/media/NYC-at-night.ec226243b215c011442b.jpg",
+    "static/media/WatchMe.png": "/isaak-react-portfolio/static/media/WatchMe.b092ae88e5a1c859ac6b.png",
+    "static/media/portfolio-pic.jpeg": "/isaak-react-portfolio/static/media/portfolio-pic.c22f850e38f6eded2388.jpeg",
+    "static/media/Social-Network.jpg": "/isaak-react-portfolio/static/media/Social-Network.2551687192237f1e1c90.jpg",
     "static/media/picture-of-me.JPG": "/isaak-react-portfolio/static/media/picture-of-me.d122e72dde31fbb58ff2.JPG",
     "static/media/Daily-Plan.png": "/isaak-react-portfolio/static/media/Daily-Plan.b28147b289be1a394e6d.png",
     "static/media/Text-editor.png": "/isaak-react-portfolio/static/media/Text-editor.756c426fb2cc10cdfd41.png",
     "index.html": "/isaak-react-portfolio/index.html",
-    "main.644fb909.css.map": "/isaak-react-portfolio/static/css/main.644fb909.css.map",
-    "main.d9c35936.js.map": "/isaak-react-portfolio/static/js/main.d9c35936.js.map"
+    "main.15b06f90.css.map": "/isaak-react-portfolio/static/css/main.15b06f90.css.map",
+    "main.778f0b89.js.map": "/isaak-react-portfolio/static/js/main.778f0b89.js.map"
   },
   "entrypoints": [
-    "static/css/main.644fb909.css",
-    "static/js/main.d9c35936.js"
+    "static/css/main.15b06f90.css",
+    "static/js/main.778f0b89.js"
   ]
 }
