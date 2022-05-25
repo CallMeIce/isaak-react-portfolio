@@ -30,13 +30,18 @@ export default function Contact() {
     return (
         <div style={styles.formStyle} >
             <form ref={form} onSubmit={sendEmail}>
-
+                <div>
                 <label>Name</label>
                 <input type="text" name="name" />
+                </div>
+                <div>
                 <label>Email</label>
                 <input type="email" name="email" />
+                </div>
+                <div>
                 <label>Message</label>
                 <textarea name="message" />
+                </div>
                 <Button type="submit" variant="contained" endIcon={<SendIcon />}>
                     Send
                 </Button>
